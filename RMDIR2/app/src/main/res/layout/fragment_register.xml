@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!--  Nome Label -->
+<android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:layout_marginBottom="8dp"
+android:textColorHint="@color/colorAccent">
+<EditText android:id="@+id/input_nome"
+    android:textColor="@color/colorAccent"
+    android:backgroundTint="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:hint="Nome" />
+</android.support.design.widget.TextInputLayout>
+
+    <!--  Password Label -->
+<android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:layout_marginBottom="8dp"
+android:textColorHint="@color/colorAccent">
+    <EditText android:id="@+id/input_password"
+    android:textColor="@color/colorAccent"
+    android:backgroundTint="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:hint="Password"/>
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:textColorHint="@color/colorAccent">
+    <EditText android:id="@+id/input_password_repeat"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Ripeti Password"/>
+</android.support.design.widget.TextInputLayout>
+
+
+<android.support.v7.widget.AppCompatButton
+android:id="@+id/btn_signin"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="24dp"
+android:layout_marginBottom="24dp"
+android:padding="12dp"
+android:text="Registrati"
+android:textColor="@color/white"     />
+    <!--android:background="@color/colorPrimaryDark"-->
+
+
+<TextView android:id="@+id/link_signin"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="24dp"
+android:text="Sei già membro ?"
+android:textColor="@color/colorAccent"
+android:gravity="center"
+android:textSize="16dip"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    </FrameLayout>
+

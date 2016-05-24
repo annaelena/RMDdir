@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Opzioni">
+        <menu>
+            <item
+                android:id="@+id/mieNote"
+                android:title="Le mie note" />
+            <item
+                android:id="@+id/noteCondivise"
+                android:title="Note condivise con me" />
+        </menu>
+    </item>
+
+    <item android:title="Impostazioni">
+        <menu>
+            <item
+                android:id="@+id/LoggingOut"
+                android:title="LogOut" />
+            <item
+                android:id="@+id/modificaPwd"
+                android:title="Cambia Password" />
+        </menu>
+    </item>
+
+
+</menu>

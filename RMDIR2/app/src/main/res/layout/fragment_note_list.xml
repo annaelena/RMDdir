@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e5f5f5f5">
+
+    <!--<ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ListViewS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#002b2b2b"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/close_menu"
+        android:layout_above="@+id/ListViewS"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/freccia" />-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ListViewS"
+        android:layout_gravity="center"
+        android:background="#efebe9"
+        android:divider="#b9b9b9"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="60dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/new_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignBottom="@+id/ListViewS"
+        android:layout_alignRight="@+id/ListViewS" />
+</RelativeLayout>
